@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palapol Samsee - Resume</title>
+    <style>
+        /* General Reset & Typography */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.5;
+            color: #333;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+        .resume-container {
+            background-color: #fff;
+            width: 100%;
+            max-width: 800px; /* A4 width approximation */
+            padding: 40px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        /* Header Section */
+        header {
+            text-align: center;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+        header h1 {
+            font-size: 28px;
+            color: #2c3e50;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        header .subtitle {
+            font-size: 16px;
+            font-weight: 600;
+            color: #34495e;
+            margin-top: 5px;
+        }
+        header .contact-info {
+            font-size: 14px;
+            color: #555;
+            margin-top: 10px;
+        }
+        header .contact-info span {
+            margin: 0 10px;
+        }
+
+        /* Section Titles */
+        h2 {
+            font-size: 18px;
+            color: #2c3e50;
+            text-transform: uppercase;
+            border-bottom: 1px solid #bdc3c7;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            margin-top: 20px;
+        }
+
+        /* Generic Item Styling */
+        .item {
+            margin-bottom: 15px;
+        }
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+        .item-title {
+            font-weight: bold;
+            font-size: 16px;
+            color: #2c3e50;
+        }
+        .item-date {
+            font-size: 14px;
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        .item-subtitle {
+            font-size: 14px;
+            font-weight: 600;
+            color: #34495e;
+            margin-bottom: 5px;
+        }
+        
+        /* Lists */
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+            font-size: 14px;
+            color: #444;
+        }
+        li {
+            margin-bottom: 4px;
+        }
+
+        /* Skills Layout */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 5px;
+            font-size: 14px;
+        }
+        .skills-grid strong {
+            color: #2c3e50;
+        }
+
+        /* Print Specific CSS */
+        @media print {
+            body {
+                background-color: #fff;
+                padding: 0;
+            }
+            .resume-container {
+                box-shadow: none;
+                padding: 0;
+                max-width: 100%;
+            }
+            @page {
+                size: A4;
+                margin: 1.5cm;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="resume-container">
+        <header>
+            <h1>Palapol Samsee</h1>
+            <div class="subtitle">Back-end Developer | Full-Stack Developer</div>
+            <div class="contact-info">
+                <span>palapolsamsee@gmail.com</span> | 
+                <span>github.com/moon-duangchan</span>
+            </div>
+        </header>
+
+        <section>
+            <h2>Education</h2>
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Mae Fah Luang University</span>
+                    <span class="item-date">2022 - Present</span>
+                </div>
+                <div class="item-subtitle">Bachelor of Engineering Program in Software Engineering</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div><strong>Programming Languages:</strong> C/C++, C#, Java, JavaScript/TypeScript, Python, Go, Lua</div>
+                <div><strong>Frameworks & Tools:</strong> FastAPI, Fiber/echo, Node.js, Spring boot, Django, Unity, Dart/Flutter, Git, Git action, Sonarqube</div>
+                <div><strong>Operating Systems:</strong> Windows and Linux OS</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+            
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Character AI Chat</span>
+                    <span class="item-date">Jan 2026 - Feb 2026</span>
+                </div>
+                <div class="item-subtitle">Personal Project</div>
+                <ul>
+                    <li>Developed a full-stack web application where users create and chat with custom AI characters via role-play system prompts.</li>
+                    <li>Built authentication, real-time chat (Django Channels/WebSocket), conversation memory summarization (RAG), and a Token-cost tracking admin dashboard.</li>
+                    <li>Integrated OpenRouter API with multi-model support and locked core behavior via layered system prompts.</li>
+                    <li><strong>Technologies:</strong> Django, Python, OpenRouter API, WebSocket.</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Yakkaw Website</span>
+                    <span class="item-date">Jan 2025 - Aug 2025</span>
+                </div>
+                <div class="item-subtitle">Thesis</div>
+                <ul>
+                    <li>Developed a front-end website using Nuxt to display PM 2.5 dust data for users joining the Yakkaw pipeline.</li>
+                    <li>Utilized Sonarqube for code analysis and security hotspots to ensure the application meets standards.</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <span class="item-title">Web (Twitter Clone)</span>
+                    <span class="item-date">Sep 2024 - Nov 2024</span>
+                </div>
+                <div class="item-subtitle">Project</div>
+                <ul>
+                    <li>Developed a social web application with Django for posting, commenting, liking, login, searching, and anonymous posting.</li>
+                    <li>Implemented an API for testing and an admin page to manage data.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Certificates</h2>
+            <div class="item">
+                <ul>
+                    <li><strong>ทักษะด้านปัญญาประดิษฐ์และประยุกต์ใช้แพลตฟอร์ม AI for Thai ประจำปี ๒๕๖๘</strong> - National Electronics and Computer Technology Center (NECTEC) (05-2025)</li>
+                    <li><strong>Foundations of Digital Marketing and E-commerce</strong> - Google Coursera (2016 - 2020)<br>
+                    Learned in-demand skills and received AI training from Google experts.</li>
+                </ul>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
